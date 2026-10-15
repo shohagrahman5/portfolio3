@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md. Oahidur Rahman | CSE Student &amp; Aspiring Software Developer</title>
+  <meta name="description" content="Portfolio of Md. Oahidur Rahman, CSE student at IUBAT, Dhaka. C++, web development and PHP (Laravel) projects.">
+  <meta name="theme-color" content="#0d262d">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Apply saved theme before paint to avoid a flash -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var dark = saved ? saved === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to content</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- ============ SIDEBAR / HEADER ============ -->
+  <header class="site-header" id="header">
+    <div class="header-inner">
+<img class="side-photo" src="Photo.jpeg" width="1P12" height="112" alt="Portrait of Md. Oahidur Rahman">
+      <a class="brand" href="#home" aria-label="Md. Oahidur Rahman, home">
+        <span class="brand-mark">MR</span>
+        <span class="brand-name">Oahidur Rahman</span>
+      </a>
+      <p class="side-role">CSE Student at IUBAT</p>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to dark theme">
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+      <div class="container">
+        <p class="hello">Hello, I'm</p>
+        <h1 class="name">Md. Oahidur Rahman</h1>
+        <ul class="roles" aria-label="Roles">
+          <li>CSE Student at IUBAT</li>
+          <li>Aspiring Software Developer</li>
+          <li>C++ Programmer</li>
+          <li>Web Developer</li>
+        </ul>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="lede">I'm a CSE student at IUBAT with a 3.82 CGPA. I build C++ applications and responsive websites, and I'm learning PHP (Laravel) to build full web apps.</p>
+
+            <div class="hero-cta">
+              <a class="button" href="#projects">View my projects</a>
+              <a class="button ghost" href="#contact">Get in touch</a>
+            </div>
+
+            <ul class="quick-links" aria-label="Contact shortcuts">
+              <li><a href="mailto:Shohagrahmanoahidur@gmail.com"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> Email</a></li>
+              <li><a href="tel:+8801742213533"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Call</a></li>
+              <li><span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Dhaka, Bangladesh</span></li>
+            </ul>
+          </div>
+
+          <div class="code-window" aria-label="A C++ struct describing Md. Oahidur Rahman">
+            <div class="code-bar"><span class="code-file">oahidur.cpp</span></div>
+<pre class="code" aria-hidden="false"><code><span class="ln"><i class="k">struct</i> <i class="t">Developer</i> {</span>
+<span class="ln">  <i class="t">string</i> name   = <i class="s">"Md. Oahidur Rahman"</i>;</span>
+<span class="ln">  <i class="t">string</i> uni    = <i class="s">"IUBAT"</i>;</span>
+<span class="ln">  <i class="t">string</i> major  = <i class="s">"CSE"</i>;</span>
+<span class="ln">  <i class="t">string</i> stack[] = {</span>
+<span class="ln">    <i class="s">"C"</i>, <i class="s">"C++"</i>, <i class="s">"HTML5"</i>, <i class="s">"CSS3"</i>,</span>
+<span class="ln">    <i class="s">"JavaScript"</i>, <i class="s">"PHP (Laravel)"</i></span>
+<span class="ln">  };</span>
+<span class="ln">  <i class="t">double</i> cgpa   = <i class="s">3.82</i>;</span>
+<span class="ln">};</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats-wrap" aria-label="Highlights">
+      <div class="container">
+        <div class="stats">
+          <div class="stat">
+            <strong><span class="count" data-target="3.82" data-decimals="2">3.82</span></strong>
+            <span>CGPA at IUBAT (out of 4.00)</span>
+          </div>
+          <div class="stat">
+            <strong><span class="count" data-target="5" data-decimals="2">5.00</span></strong>
+            <span>GPA in HSC and SSC (Science)</span>
+          </div>
+          <div class="stat">
+            <strong><span class="count" data-target="4" data-decimals="0">4</span></strong>
+            <span>Academic projects built</span>
+          </div>
+          <div class="stat">
+            <strong><span class="count" data-target="6" data-decimals="0">6</span></strong>
+            <span>Courses and certificates</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="container section-grid">
+        <div class="section-intro">
+          <h2 class="section-title">About me</h2>
+          <p class="section-lede">Student, builder, and a quick learner who likes solving real problems.</p>
+        </div>
+        <div class="section-body about-body">
+          <img class="about-photo" src="photo.png" width="120" height="120" alt="Portrait of Md. Oahidur Rahman">
+          <p>I am a motivated Computer Science and Engineering student at IUBAT with a strong academic record (CGPA 3.82 / 4.00) and hands-on experience in programming, web development and software projects. I am passionate about learning emerging technologies, solving real-world problems, and continuously improving my technical and interpersonal skills.</p>
+          <dl class="facts">
+            <div><dt>University</dt><dd>IUBAT</dd></div>
+            <div><dt>Location</dt><dd>Dhaka, Bangladesh</dd></div>
+            <div><dt>Languages</dt><dd>Bengali (Native), English (Professional)</dd></div>
+            <div><dt>Clubs</dt><dd>IUBAT Programming Club, ISH Club</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section alt">
+      <div class="container section-grid">
+        <div class="section-intro">
+          <h2 class="section-title">My skills</h2>
+          <p class="section-lede">The languages and tools I use to build things.</p>
+        </div>
+
+        <div class="section-body rows">
+          <article class="row skill">
+            <div class="skill-head">
+              <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></span>
+              <h3>Programming</h3>
+            </div>
+            <ul class="chips"><li>C</li><li>C++</li></ul>
+          </article>
+          <article class="row skill">
+            <div class="skill-head">
+              <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+              <h3>Web Development</h3>
+            </div>
+            <ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive Design</li></ul>
+          </article>
+          <article class="row skill">
+            <div class="skill-head">
+              <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="8" rx="2"/><rect x="2" y="13" width="20" height="8" rx="2"/><path d="M6 7h.01M6 17h.01"/></svg></span>
+              <h3>Backend</h3>
+            </div>
+            <ul class="chips"><li>PHP (Laravel)</li></ul>
+          </article>
+          <article class="row skill">
+            <div class="skill-head">
+              <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg></span>
+              <h3>Software &amp; Tools</h3>
+            </div>
+            <ul class="chips"><li>Visual Studio Code</li><li>Code::Blocks</li><li>MS Word</li><li>MS Excel</li><li>MS PowerPoint</li></ul>
+          </article>
+          <article class="row skill">
+            <div class="skill-head">
+              <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></span>
+              <h3>Operating Systems</h3>
+            </div>
+            <ul class="chips"><li>Windows</li><li>Linux</li></ul>
+          </article>
+          <article class="row skill">
+            <div class="skill-head">
+              <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></span>
+              <h3>Professional Skills</h3>
+            </div>
+            <ul class="chips"><li>Leadership &amp; Teamwork</li><li>Problem Solving</li><li>Time Management</li><li>Quick Learning</li><li>Event Coordination</li></ul>
+          </article>
+          <article class="row skill">
+            <div class="skill-head">
+              <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+              <h3>Communication</h3>
+            </div>
+            <ul class="chips"><li>Public Speaking</li><li>Critical Thinking</li><li>Adaptability</li></ul>
+          </article>
+          <article class="row skill">
+            <div class="skill-head">
+              <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></span>
+              <h3>Interests</h3>
+            </div>
+            <ul class="chips"><li>Software &amp; Web Development</li><li>Programming</li><li>Open Source</li><li>Community Service</li><li>New Technologies</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <div class="container section-grid">
+        <div class="section-intro">
+          <h2 class="section-title">My projects</h2>
+          <p class="section-lede">C++ applications and web projects from my university work.</p>
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter" type="button" data-filter="cpp" aria-pressed="false">C++</button>
+            <button class="filter" type="button" data-filter="web" aria-pressed="false">Web</button>
+          </div>
+        </div>
+
+        <div class="section-body rows" id="projectGrid">
+          <article class="row project" data-cat="cpp">
+            <div class="project-top">
+              <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+              <span class="tag">C++</span>
+            </div>
+            <div class="project-main">
+              <h3>Student Management System</h3>
+              <p>A console-based application built with Object-Oriented Programming and file handling. It covers student registration, search, update, delete and report generation.</p>
+              <ul class="chips small"><li>C++</li><li>OOP</li><li>File handling</li><li>Reports</li></ul>
+            </div>
+          </article>
+
+          <article class="row project" data-cat="cpp">
+            <div class="project-top">
+              <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M20 17v4H6.5A2.5 2.5 0 0 1 4 18.5"/></svg></span>
+              <span class="tag">C++</span>
+            </div>
+            <div class="project-main">
+              <h3>Library Management System</h3>
+              <p>A book management system with issue and return, student records and inventory management.</p>
+              <ul class="chips small"><li>C++</li><li>Issue / Return</li><li>Records</li><li>Inventory</li></ul>
+            </div>
+          </article>
+
+          <article class="row project" data-cat="cpp">
+            <div class="project-top">
+              <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20V6M3 12h18v8M21 12V9a2 2 0 0 0-2-2h-8v5"/></svg></span>
+              <span class="tag">C++</span>
+            </div>
+            <div class="project-main">
+              <h3>Hotel Reservation System</h3>
+              <p>A hotel reservation application supporting room booking, customer management and reservation records.</p>
+              <ul class="chips small"><li>C++</li><li>Booking</li><li>Customers</li><li>Records</li></ul>
+            </div>
+          </article>
+
+          <article class="row project" data-cat="web">
+            <div class="project-top">
+              <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></span>
+              <span class="tag">Web</span>
+            </div>
+            <div class="project-main">
+              <h3>Responsive Website</h3>
+              <p>Responsive web pages built with HTML5 and CSS3, with a clean UI and a user-friendly design.</p>
+              <ul class="chips small"><li>HTML5</li><li>CSS3</li><li>Responsive</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section alt">
+      <div class="container section-grid">
+        <div class="section-intro">
+          <h2 class="section-title">Education</h2>
+          <p class="section-lede">From SSC to my B.Sc., newest first.</p>
+        </div>
+
+        <div class="section-body">
+          <ol class="timeline">
+            <li class="t-item current">
+              <span class="t-dot" aria-hidden="true"></span>
+              <div class="t-card">
+                <span class="t-date">Present</span>
+                <h3>B.Sc. in Computer Science &amp; Engineering</h3>
+                <p>IUBAT, International University of Business Agriculture and Technology. Student ID 24103025, 8th semester.</p>
+                <span class="pill">CGPA: 3.82 / 4.00</span>
+              </div>
+            </li>
+            <li class="t-item">
+              <span class="t-dot" aria-hidden="true"></span>
+              <div class="t-card">
+                <span class="t-date">2021</span>
+                <h3>Higher Secondary Certificate (HSC)</h3>
+                <p>Collectorate School and College, Science</p>
+                <span class="pill">GPA: 5.00</span>
+              </div>
+            </li>
+            <li class="t-item">
+              <span class="t-dot" aria-hidden="true"></span>
+              <div class="t-card">
+                <span class="t-date">2019</span>
+                <h3>Secondary School Certificate (SSC)</h3>
+                <p>Dhap Shatgara Madrasha, Science</p>
+                <span class="pill">GPA: 5.00</span>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATES ============ -->
+    <section id="certificates" class="section">
+      <div class="container section-grid">
+        <div class="section-intro">
+          <h2 class="section-title">Certificates &amp; activities</h2>
+          <p class="section-lede">Training and short courses, and the clubs where I take part in programming events, workshops and academic support.</p>
+        </div>
+
+        <div class="section-body rows">
+          <article class="row cert featured">
+            <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="m8.2 13.9-1.2 8.1 5-3 5 3-1.2-8.1"/></svg></span>
+            <h3>PHP (Laravel) Web Development Training (80 Hours)</h3>
+            <p>Dept. of CSE, Jagannath University, with Bangladesh Computer Council (BCC), ICT Division, under the EDGE Project</p>
+          </article>
+          <article class="row cert">
+            <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="m8.2 13.9-1.2 8.1 5-3 5 3-1.2-8.1"/></svg></span>
+            <h3>CreoVision Season 2: Master LinkedIn</h3>
+            <p>Certificate of participation. Organized by Vocational Services Avenue &amp; Rotaract Club of Delhi South East</p>
+          </article>
+          <article class="row cert">
+            <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="m8.2 13.9-1.2 8.1 5-3 5 3-1.2-8.1"/></svg></span>
+            <h3>Career with AI</h3>
+            <p>Grameenphone Academy &amp; Lead Academy</p>
+          </article>
+          <article class="row cert">
+            <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="m8.2 13.9-1.2 8.1 5-3 5 3-1.2-8.1"/></svg></span>
+            <h3>Sharpen Your Interview Skills</h3>
+            <p>Grameenphone Academy</p>
+          </article>
+          <article class="row cert">
+            <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="m8.2 13.9-1.2 8.1 5-3 5 3-1.2-8.1"/></svg></span>
+            <h3>Canva for Presentations</h3>
+            <p>Grameenphone Academy</p>
+          </article>
+          <article class="row cert">
+            <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="m8.2 13.9-1.2 8.1 5-3 5 3-1.2-8.1"/></svg></span>
+            <h3>Art of Communication</h3>
+            <p>Grameenphone Academy</p>
+          </article>
+          <article class="row cert clubs">
+            <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></span>
+            <h3>Club memberships</h3>
+            <ul class="chips small"><li>IUBAT Programming Club</li><li>ISH Club (IUBAT Scholars Hub)</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section alt">
+      <div class="container section-grid">
+        <div class="section-intro">
+          <h2 class="section-title">Contact me</h2>
+          <p class="section-lede">Have an opportunity or a question? Send me a message.</p>
+        </div>
+
+        <div class="section-body">
+          <div class="contact-list rows">
+            <div class="row contact-item">
+              <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+              <div>
+                <span class="label">Email</span>
+                <a href="mailto:Shohagrahmanoahidur@gmail.com" id="emailText">Shohagrahmanoahidur@gmail.com</a>
+              </div>
+              <button class="copy-btn" id="copyEmail" type="button">Copy</button>
+            </div>
+            <div class="row contact-item">
+              <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+              <div>
+                <span class="label">Phone</span>
+                <a href="tel:+8801742213533">+880 1742213533</a>
+              </div>
+            </div>
+            <div class="row contact-item">
+              <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <div>
+                <span class="label">Location</span>
+                <span>Dhaka, Bangladesh</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="cName">Your name</label>
+              <input id="cName" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="cEmail">Your email</label>
+              <input id="cEmail" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field wide">
+              <label for="cMsg">Message</label>
+              <textarea id="cMsg" name="message" rows="5" required></textarea>
+            </div>
+            <p class="form-error" id="formError" role="alert" hidden></p>
+            <div class="form-actions">
+              <button class="button" type="submit">Send message</button>
+              <p class="form-note">This opens your email app with the message ready to send.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Md. Oahidur Rahman | Portfolio</p>
+      <a class="to-top-link" href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
